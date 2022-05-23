@@ -1,0 +1,47 @@
+::-webkit-scrollbar {
+    width: 13px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: lightgrey; 
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: lightslategray; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #5e0075; 
+}
+
+
+.nav-pills>li>a.active, .nav-item>a.active {
+    background-color: #5e0075 !important;
+}
+
+.nav-pills>li>a, .nav-item>a {
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 20px;
+    color: #5e0075;
+}
+
+.nav-pills>li>a:hover, .nav-item>a:hover{
+    font-size: 20px;
+    color: white;
+    background-color: #5e0075;
+}
+
+.carousel-item>img,
+.carousel-inner {
+    border-radius: 40px;
+}
+
+.descricao>p {
+    font-size: 22px;
+}
+
+
