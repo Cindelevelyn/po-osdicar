@@ -11,6 +11,7 @@
         integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
         crossorigin="anonymous"></script>
     <link href="style/style.css" rel="stylesheet">
+    <script src="script.js" type="text/JavaScript"></script>
     <title>Poços di Car | LISTAGEM</title>
     <link rel="icon" href="img/logo_icon.png">
 </head>
@@ -18,49 +19,52 @@
 <body>
     <main>
         <img src="img/capa.png" class="img-fluid" alt="logo poçosdiCar" width="100%">
-        <div class="sticky-top">
-            <nav class="navbar navbar-expand-lg bg-white justify-content-center">
-                <ul class="nav bg-white">
-                    <ul class="nav nav-pills navbar-expand-lg">
+        <!-- navbar -->
+        <div class="sticky-top mx-auto order-0">
+            <div class="sticky-top">
+                <nav class="navbar navbar-expand-lg bg-white justify-content-lg-center justify-content-sm-start">
+                    <ul class="nav bg-white">
+                        <ul class="nav nav-pills navbar-expand-lg">
                             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                                 aria-expanded="false" aria-label="Toggle navigation">
                                 <span class="navbar-toggler-icon"></span>
                             </button>
-                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                            <li class="nav-item">
-                                <a class="nav-link" aria-current="page" href="index.html">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link active" href="listagem.html">Listagem</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="cadastro.html">Cadastro</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="sobre.html">Sobre</a>
-                            </li>
-                        </div>
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="listagem.html">Listagem</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="cadastro.html">Cadastro</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="sobre.html">Sobre</a>
+                                </li>
+                            </div>
+                        </ul>
                     </ul>
-                </ul>
-            </nav>
+                </nav>
+            </div>
         </div>
         <br>
-        <div class="alert alert-secondary" role="alert" style="margin: 2%;"">
-            <h1 class=" text-center">Veja os nossos veículos!</h1>
+        <div class="alert alert-secondary" role="alert" style="margin: 2%;" ">
+            <h1 class=" text-center ">Veja os nossos veículos!</h1>
             <br>
-            <form class="d-flex" role="search">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-dark btn-lg" style="background-color: #5e005e;" type="submit">Buscar</button>
+            <form class=" d-flex " role=" search ">
+                <input class=" form-control me-2 " type=" search " placeholder=" Search " aria-label=" Search ">
+                <button class=" btn btn-dark btn-lg " style=" background-color: #5e005e; " type=" submit ">Buscar</button>
             </form>
         </div>
         <!-- carro 1 -->
-        <div class="border bg-light" style="margin: 2%;">
-            <div class="row gx-5">
-                <div class="col-lg-3 col-xs-6">
-                    <img src="img/carro_vermelho.jpg" class="img-thumbnail" alt="carro vermelho">
+        <div class=" border bg-light " style=" margin: 2%; ">
+            <div class=" row gx-5 ">
+                <div class=" col-lg-3 col-xs-6 ">
+                    <img src=" img/carro_vermelho.jpg " class=" img-thumbnail " alt=" carro vermelho ">
                 </div>
-                <div class="col-lg-5 col-xs-2 descricao">
+                <div class=" col-lg-5 col-xs-2 descricao ">
                     <h2>Modelo do Veículo</h2>
                     <p><b>Marca:</b> Fiat</p>
                     <p><b>Preço:</b> R$ 12.500,00</p>
@@ -69,21 +73,21 @@
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi posuere, quam vel viverra mollis,
                         lacus augue accumsan erat, eu ornare velit arcu at dolor.</p>
                 </div>
-                <div class="col-lg-4">
-                    <div class="d-grid gap-2 d-md-flex justify-content-md-end" style="margin: 2%;">
-                        <a class="btn btn-secondary btn-lg" href="#" role="button">Editar</a>
-                        <a class="btn btn-danger btn-lg" href="#" role="button">Excluir</a>
+                <div class=" col-lg-4 ">
+                    <div class=" d-grid gap-2 d-md-flex justify-content-md-end " style=" margin: 2%; ">
+                        <a class=" btn btn-secondary btn-lg " href=" # " role=" button ">Editar</a>
+                        <a class=" btn btn-danger btn-lg " href=" # " role=" button ">Excluir</a>
                     </div>
                 </div>
             </div>
         </div>
         <!-- carro 2 -->
-        <div class="border bg-light" style="margin: 2%;">
-            <div class="row gx-5">
-                <div class="col-lg-3 col-xs-6">
-                    <img src="img/carro_azul.jpg" class="img-thumbnail" alt="carro vermelho">
+        <div class=" border bg-light " style=" margin: 2%; ">
+            <div class=" row gx-5 ">
+                <div class=" col-lg-3 col-xs-6 ">
+                    <img src=" img/carro_azul.jpg " class=" img-thumbnail " alt=" carro vermelho ">
                 </div>
-                <div class="col-lg-5 col-xs-2 descricao">
+                <div class=" col-lg-5 col-xs-2 descricao ">
                     <h2>Modelo do Veículo</h2>
                     <p><b>Marca:</b> Fiat</p>
                     <p><b>Preço:</b> R$ 12.500,00</p>
@@ -92,10 +96,10 @@
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi posuere, quam vel viverra mollis,
                         lacus augue accumsan erat, eu ornare velit arcu at dolor.</p>
                 </div>
-                <div class="col-lg-4">
-                    <div class="d-grid gap-2 d-md-flex justify-content-md-end" style="margin: 2%;">
-                        <a class="btn btn-secondary btn-lg" href="#" role="button">Editar</a>
-                        <a class="btn btn-danger btn-lg" href="#" role="button">Excluir</a>
+                <div class=" col-lg-4 ">
+                    <div class=" d-grid gap-2 d-md-flex justify-content-md-end " style=" margin: 2%; ">
+                        <a class=" btn btn-secondary btn-lg " href=" # " role=" button ">Editar</a>
+                        <a class=" btn btn-danger btn-lg " href=" # " role=" button ">Excluir</a>
                     </div>
                 </div>
             </div>
@@ -104,7 +108,7 @@
 </body>
 
 <footer>
-    <p class="text-center" style="opacity: 50%;">@Cindel Sousa e Cristhian Cintra - IFSULDEMINAS | Campus Poços de
+    <p class=" text-center " style=" opacity: 50%; ">@Cindel Sousa e Cristhian Cintra - IFSULDEMINAS | Campus Poços de
         Caldas - 2022</p>
 </footer>
 
