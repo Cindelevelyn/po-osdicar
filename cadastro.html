@@ -11,6 +11,7 @@
         integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
         crossorigin="anonymous"></script>
     <script src="script.js" type="text/JavaScript"></script>
+    <!-- <script src="https://unpkg.com/vanilla-masker@1.1.1/build/vanilla-maker.min.js"></script> -->
     <link href="style/style.css" rel="stylesheet">
     <title>Poços di Car | CADASTRO</title>
     <link rel="icon" href="img/logo_icon.png">
@@ -32,13 +33,13 @@
                             </button>
                             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                                 <li class="nav-item">
-                                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                                    <a class="nav-link" aria-current="page" href="index.html">Home</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="listagem.html">Listagem</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="cadastro.html">Cadastro</a>
+                                    <a class="nav-link active" href="cadastro.html">Cadastro</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="sobre.html">Sobre</a>
@@ -50,11 +51,14 @@
             </div>
         </div>
         <br>
-        <div class="container-fluid justify-content-center">
+
+        <!-- forms -->
+        <div class="container-fluid justify-content-center ml-3">
             <form class="row g-3">
+                <!-- marca -->
                 <div class="col-md-6">
                     <label for="inputState" class="form-label">Marca</label>
-                    <select id="inputState" class="form-select">
+                    <select id="marca_escolhida" class="form-select">
                         <option selected>-- Marca</option>
                         <option value="Audi">Audi</option>
                         <option value="BMW">BMW</option>
@@ -66,14 +70,16 @@
                         <option value="Nissan">Nissan</option>
                     </select>
                 </div>
+                <!-- modelo -->
                 <div class="col-md-6">
                     <label for="inputPassword4" class="form-label">Modelo</label>
                     <input type="text" placeholder="Insira o nome do modelo..." class="form-control"
                         id="modelo_carro">
                 </div>
+                <!-- ano -->
                 <div class="col-md-6">
                     <label for="inputState" class="form-label">Ano</label>
-                    <select id="inputState" class="form-select">
+                    <select id="ano_escolhido" class="form-select">
                         <option selected>-- Ano</option>
                         <option value="2010">2010</option>
                         <option value="2011">2011</option>
@@ -85,18 +91,21 @@
                         <option value="2017">2017</option>
                     </select>
                 </div>
+                <!-- preço -->
                 <div class="col-md-6">
                     <label for="inputPassword4" class="form-label">Preço</label>
-                    <input type="password" placeholder="Insira o valor..." class="form-control" id="inputPassword4">
+                    <input type="value" placeholder="Insira o valor..." class="form-control" id="preco">
                 </div>
+                <!-- foto -->
                 <div class="col-md-6">
                     <label for="inputPassword4" class="form-label">Foto</label>
                     <input type="password" placeholder="Insira o nome da foto..." class="form-control"
-                        id="inputPassword4">
+                        id="foto">
                 </div>
+                <!-- cor -->
                 <div class="col-md-6">
                     <label for="inputState" class="form-label">Cor</label>
-                    <select id="inputState" class="form-select">
+                    <select id="cor_escolhida" class="form-select">
                         <option selected>-- Cor</option>
                         <option value="Azul">Azul</option>
                         <option value="Amarelo">Amarelo</option>
@@ -104,19 +113,23 @@
                         <option value="Branco">Branco</option>
                     </select>
                 </div>
+                <!-- descrição -->
                 <div class="col-md-12">
                     <label for="inputPassword4" class="form-label">Descrição</label>
-                    <textarea class="form-control" placeholder="Descreva o veículo..." id="floatingTextarea2"
+                    <textarea class="form-control" placeholder="Descreva o veículo..." id="descricao"
                         style="height: 100px">
                     </textarea>
                 </div>
             </form>
             <br>
+
             <div class="col-lg-12">
                 <div class="d-grid gap-2 d-md-flex justify-content-md-end"">
-                    <a id="btn_cadastro" class=" btn btn-dark btn-lg" style="background-color: #5e005e;" href="#" role="button" onclick="Enviar();">Cadastrar
+                    <!-- btn cadastro -->
+                    <a id="btn_cadastro" class="btn btn-dark btn-lg" style="background-color: #5e005e;" href="#" role="button" onclick="Cadastro();">Cadastrar
                     Veículo</a>
-                    <a class="btn btn-danger btn-lg" href="#" role="button">Limpar</a>
+                    <!-- btn limpar -->
+                    <a class="btn btn-danger btn-lg" href="#" role="button" onclick="ColocaNaLista();">Limpar</a>
                 </div>
             </div>
         </div>

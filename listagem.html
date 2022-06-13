@@ -32,10 +32,10 @@
                             </button>
                             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                                 <li class="nav-item">
-                                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                                    <a class="nav-link" aria-current="page" href="index.html">Home</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="listagem.html">Listagem</a>
+                                    <a class="nav-link active" href="listagem.html">Listagem</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="cadastro.html">Cadastro</a>
@@ -50,6 +50,7 @@
             </div>
         </div>
         <br>
+        <!-- busca -->
         <div class="alert alert-secondary" role="alert" style="margin: 2%;" ">
             <h1 class=" text-center ">Veja os nossos veículos!</h1>
             <br>
@@ -60,26 +61,28 @@
         </div>
         <!-- carro 1 -->
         <div class=" border bg-light " style=" margin: 2%; ">
-            <div class=" row gx-5 ">
-                <div class=" col-lg-3 col-xs-6 ">
-                    <img src=" img/carro_vermelho.jpg " class=" img-thumbnail " alt=" carro vermelho ">
-                </div>
-                <div class=" col-lg-5 col-xs-2 descricao ">
+            <div class=" row gx-5">
+            <div class="col-lg-3 col-xs-6 ">
+                <img src=" img/carro_vermelho.jpg " class="img-thumbnail " alt="carro vermelho ">
+            </div>
+            <div class="col-lg-5 col-xs-2 align-self-center">
+                <div class="d-flex flex-column descricao">
                     <h2>Modelo do Veículo</h2>
-                    <p><b>Marca:</b> Fiat</p>
+                    <p id="marca_do_carro"><b>Marca:</b> Fiat</p>
                     <p><b>Preço:</b> R$ 12.500,00</p>
                     <p><b>Cor:</b> Vermelho</p>
 
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi posuere, quam vel viverra mollis,
                         lacus augue accumsan erat, eu ornare velit arcu at dolor.</p>
                 </div>
-                <div class=" col-lg-4 ">
-                    <div class=" d-grid gap-2 d-md-flex justify-content-md-end " style=" margin: 2%; ">
-                        <a class=" btn btn-secondary btn-lg " href=" # " role=" button ">Editar</a>
-                        <a class=" btn btn-danger btn-lg " href=" # " role=" button ">Excluir</a>
-                    </div>
+            </div>
+            <div class=" col-lg-4 ">
+                <div class=" d-grid gap-2 d-md-flex justify-content-md-end " style=" margin: 2%; ">
+                    <a class=" btn btn-secondary btn-lg " href=" # " role=" button ">Editar</a>
+                    <a class=" btn btn-danger btn-lg " href=" # " role=" button ">Excluir</a>
                 </div>
             </div>
+        </div>
         </div>
         <!-- carro 2 -->
         <div class=" border bg-light " style=" margin: 2%; ">
@@ -87,14 +90,17 @@
                 <div class=" col-lg-3 col-xs-6 ">
                     <img src=" img/carro_azul.jpg " class=" img-thumbnail " alt=" carro vermelho ">
                 </div>
-                <div class=" col-lg-5 col-xs-2 descricao ">
-                    <h2>Modelo do Veículo</h2>
-                    <p><b>Marca:</b> Fiat</p>
-                    <p><b>Preço:</b> R$ 12.500,00</p>
-                    <p><b>Cor:</b> Vermelho</p>
+                <div class="col-lg-5 col-xs-2 align-self-center">
+                    <div class="d-flex flex-column descricao">
+                        <h2>Modelo do Veículo</h2>
+                        <p><b>Marca:</b> Fiat</p>
+                        <p><b>Preço:</b> R$ 12.500,00</p>
+                        <p><b>Cor:</b> Vermelho</p>
 
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi posuere, quam vel viverra mollis,
-                        lacus augue accumsan erat, eu ornare velit arcu at dolor.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi posuere, quam vel viverra
+                            mollis,
+                            lacus augue accumsan erat, eu ornare velit arcu at dolor.</p>
+                    </div>
                 </div>
                 <div class=" col-lg-4 ">
                     <div class=" d-grid gap-2 d-md-flex justify-content-md-end " style=" margin: 2%; ">
