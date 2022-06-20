@@ -1,6 +1,4 @@
-document
-  .getElementById("btn_cadastro")
-  .addEventListener("click", validar, false);
+document.getElementById("btn_cadastro").addEventListener("click", validar, false);
 
 function validar() {
   var $divMensagemModelo = document.getElementById("divMensagemModelo");
@@ -46,4 +44,9 @@ function validar() {
     $divMensagemDesc.innerHTML = "Descrição muito pequena";
   else $divMensagemDesc.innerHTML = "";
 
+  if($divMensagemModelo.innerHTML == "" && $divMensagemMarca.innerHTML == "" && $divMensagemAno.innerHTML == "" && $divMensagemPreco.innerHTML == "" && $divMensagemFoto.innerHTML == "" && $divMensagemCor.innerHTML == "" && $divMensagemDesc.innerHTML == "")
+  {
+    alert("Cadastro realizado!");
+  }
 }
+
